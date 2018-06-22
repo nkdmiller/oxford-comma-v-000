@@ -7,7 +7,7 @@ def oxford_comma(array)
     binary_array = []
     array.each do |x|
       if counter == 2
-        binary_array << "x"
+        binary_array << "#{x}"
         counter -= 1
       else
         binary_array << " and #{x}"
