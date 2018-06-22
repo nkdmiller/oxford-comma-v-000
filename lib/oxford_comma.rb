@@ -11,6 +11,8 @@ def oxford_comma(array)
       else
         binary_array << " and #{x}"
         return binary_array.join
+      end
+    end
   end
   array.each do |x|
     if counter != 1
