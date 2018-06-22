@@ -7,8 +7,5 @@ def oxford_comma(array)
       counter -= 1
     else
       comma_array << "and #{x}."
-
-
-
-
+    end
 end
