@@ -8,4 +8,5 @@ def oxford_comma(array)
     else
       comma_array << "and #{x}."
     end
+  end
 end
