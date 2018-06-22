@@ -8,19 +8,21 @@ def oxford_comma(array)
     array.each do |x|
       if counter == 2
         binary_array << "x"
+        counter -= 1
       else
         binary_array << " and #{x}"
         return binary_array.join
       end
     end
-  end
-  array.each do |x|
-    if counter != 1
-      comma_array << "#{x}, "
-      counter -= 1
-    else
-      comma_array << "and #{x}"
+  else
+    array.each do |x|
+      if counter != 1
+        comma_array << "#{x}, "
+        counter -= 1
+      else
+        comma_array << "and #{x}"
+      end
     end
+    return comma_array.join
   end
-  return comma_array.join
 end
