@@ -9,5 +9,5 @@ def oxford_comma(array)
       comma_array << "and #{x}."
     end
   end
-  return comma_array.join!
+  return comma_array.join
 end
